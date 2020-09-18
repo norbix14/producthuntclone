@@ -1,30 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Product Hunt Clone
 
-## Getting Started
+Clon simple de **[Product Hunt](https://www.producthunt.com/ "Sitio oficial")**
 
-First, run the development server:
+Hecho usando **React**, **Next.js** y **Firebase**
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Snapshots
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Inicio](/snapshots/inicio.png "Todos los productos")
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+![Ver un producto](/snapshots/ver.png "Ver un producto")
 
-## Learn More
+![Agregar producto](/snapshots/agregar.png "Agregar producto")
 
-To learn more about Next.js, take a look at the following resources:
+![Eliminar producto](/snapshots/eliminar.png "Eliminar producto")
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Iniciar sesión](/snapshots/login.png "Iniciar sesión")
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![Crear cuenta](/snapshots/crear-cuenta.png "Crear cuenta")
 
-## Deploy on Vercel
+## Primeros pasos
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Clonar repositorio
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**`git clone <repository> --branch <master> <directory>`**
+
+Instalar dependencias necesarias
+
+**`npm i`**
+
+Ver **[App](http://localhost:3000 "Modo de desarrollo")** en modo de desarrollo
+
+**`npm run dev`**
+
+## Este proyecto utiliza **[Firebase](https://firebase.google.com/ "Google Firebase")**
+
+Son necesarias las credenciales de tu propia cuenta en Firebase
+
+Colocarlas en **/firebase/config.js** o en el archivo **.env.local**
+
+Ejemplo del archivo **.env.local**:
+
+		API_KEY=api-key
+		AUTH_DOMAIN=auth-domain
+		DATABASE_URL=database-url
+		PROJECT_ID=project-id
+		STORAGE_BUCKET=storage-bucket
+		MESSAGING_SENDER_ID=messaging-sender-id
+		APP_ID=app-id
+
+## Proyecto en modo de producción
+
+Crear `build` de producción
+
+**`npm run build`**
+
+Crear carpeta `out`
+
+**`npm run export`**
+
+## Ver el proyecto en modo de produccion
+
+Instalar `serve`
+
+**`npm i -g serve`**
+
+Ver **[App](http://localhost:5000 "Modo de producción")** en modo de produccion
+
+**`serve -s out`**
